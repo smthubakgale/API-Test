@@ -25,6 +25,6 @@ jobs:
 
       - name: Expose app with ngrok
         run: |
-          ./ngrok http 8080 --region=us --authtoken=${NGROK_TOKEN}
+          ./ngrok http 8080 --region=us --authtoken=2uA3QtM3vZatHsQAqSeILAenhhd_4qd6K31LpyeVD18fAqMGL
         env:
           NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
