@@ -18,7 +18,7 @@ jobs:
           sleep 5
 
       - name: Expose app with ngrok
-        uses: ngrok/ngrok@1.0.0
+        uses: ngrok/ngrok@latest
         env:
           NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
           NGROK_REGION: us
