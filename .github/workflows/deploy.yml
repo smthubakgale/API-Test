@@ -12,14 +12,19 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install ngrok
+        run: |
+          curl -s https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > ngrok.zip
+          unzip ngrok.zip
+          chmod +x ngrok
+
       - name: Start Express app
         run: |
           npm start &
           sleep 5
 
       - name: Expose app with ngrok
-        uses: ngrok/ngrok@latest
+        run: |
+          ./ngrok http 8080 --region=us --authtoken=${NGROK_TOKEN}
         env:
           NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
-          NGROK_REGION: us
-          NGROK_PORT: 8080
