@@ -14,9 +14,10 @@ jobs:
 
       - name: Install latest ngrok
         run: |
-          curl -s https://ngrok.com/ngrok | bash
-          mv ngrok /usr/local/bin/
-          ngrok config add-authtoken 2uA3QtM3vZatHsQAqSeILAenhhd_4qd6K31LpyeVD18fAqMGL
+          wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+          unzip ngrok-stable-linux-amd64.zip
+          chmod +x ngrok
+          ./ngrok config add-authtoken 2uA3QtM3vZatHsQAqSeILAenhhd_4qd6K31LpyeVD18fAqMGL
         env:
           NGROK_TOKEN: 2uA3QtM3vZatHsQAqSeILAenhhd_4qd6K31LpyeVD18fAqMGL
 
