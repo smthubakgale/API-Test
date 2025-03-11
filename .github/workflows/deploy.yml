@@ -17,7 +17,8 @@ jobs:
           wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
           unzip ngrok-stable-linux-amd64.zip
           chmod +x ngrok
-          ./ngrok config add-authtoken 2uA3QtM3vZatHsQAqSeILAenhhd_4qd6K31LpyeVD18fAqMGL
+          ./ngrok authtoken 2uA3QtM3vZatHsQAqSeILAenhhd_4qd6K31LpyeVD18fAqMGL
+          ./ngrok http 8080 --region=us
         env:
           NGROK_TOKEN: 2uA3QtM3vZatHsQAqSeILAenhhd_4qd6K31LpyeVD18fAqMGL
 
