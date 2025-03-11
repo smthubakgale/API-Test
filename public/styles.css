@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.rooms-container {
+  float: left;
+  width: 20%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.rooms-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rooms-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.rooms-list li:hover {
+  background-color: #ccc;
+}
+
+.rooms-content {
+  float: left;
+  width: 60%;
+  padding: 20px;
+}
+
+.room-messages {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.room-messages ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.room-messages li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.clients-container {
+  float: right;
+  width: 20%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.clients-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clients-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.clients-list li:hover {
+  background-color: #ccc;
+}
+
+.clients-content {
+  padding: 20px;
+}
+
+.client-messages {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.client-messages ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.client-messages li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Responsive design for mobile platforms */
+
+@media only screen and (max-width: 768px) {
+  .rooms-container {
+    width: 100%;
+    float: none;
+  }
+  .rooms-content {
+    width: 100%;
+    float: none;
+  }
+  .clients-container {
+    width: 100%;
+    float: none;
+  }
+  .clients-content {
+    padding: 10px;
+  }
+  .room-messages {
+    padding: 10px;
+  }
+  .client-messages {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .rooms-list li {
+    padding: 5px;
+  }
+  .clients-list li {
+    padding: 5px;
+  }
+  .room-messages li {
+    padding: 5px;
+  }
+  .client-messages li {
+    padding: 5px;
+  }
+}

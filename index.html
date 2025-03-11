@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Chat App</h1>
+  <div class="broadcast-container">
+    <h2>Broadcast Room</h2>
+    <ul id="broadcast-messages"></ul>
+    <input id="broadcast-message" type="text" placeholder="Enter message">
+    <button id="send-broadcast">Send Broadcast</button>
+  </div>
+  <div class="rooms-container">
+    <h2>Rooms:</h2>
+    <ul id="rooms-list"></ul>
+    <input id="room-name" type="text" placeholder="Enter room name">
+    <button id="create-room">Create Room</button>
+	
+	
+    <h2>Private Clients:</h2>
+    <ul id="clients-list2"></ul>
+    <input id="client-name" type="text" placeholder="Enter client name">
+    <button id="create-client">Create Client</button>
+	
+  </div>
+  <div class="clients-container">
+    <h2> Room Clients:</h2>
+    <ul id="clients-list"></ul>
+  </div>
+  
+  <div id="rooms-content"></div>
+  <div id="clients-content"></div> 
+
+  <script src="library.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
